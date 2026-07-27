@@ -1,7 +1,31 @@
 aid: florin
+accessModel:
+  pricing: unknown
+  onboarding: approval
+  trial: false
+  try_now: false
+  public: false
+  label: Requires approval
+  confidence: medium
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://kinlane-images.s3.amazonaws.com/shared/apis-json/icons/florin.png
 name: Florin
-description: Florin is a company surfaced as a portfolio company of y-combinator and added to the API
-  Evangelist network as a stub for enrichment. This profile is a lead awaiting the enrichment pipeline.
+description: >-
+  Florin is a San Francisco fintech startup building an integrated financial
+  operating system for venture-backed companies. Rather than reselling another
+  bank's infrastructure, Florin is building the underlying money-movement rails
+  end to end so that funds settle in real time on a single ledger the company
+  owns. The product combines business accounts, cards, payments, and treasury
+  management into one invite-only membership aimed at startup founders who would
+  otherwise stitch together half a dozen separate tools to hold, move, and grow
+  their capital. Florin was founded in 2026 by Shaurya Aggarwal (CEO), Amol Pant
+  (CTO), and Aydin Sorensen, and is a member of Y Combinator's Summer 2026 batch.
+  At the time of this profile Florin operates a single marketing landing page
+  with a waitlist and publishes no public API, developer documentation, or other
+  developer-facing surface yet; this entry captures the company's identity and
+  awaits a public API to enrich further.
 url: https://raw.githubusercontent.com/api-evangelist/florin/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -11,12 +35,30 @@ x-tier: stub
 x-tier-reason: portfolio-lead
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-19'
 tags:
 - Company
+- Fintech
+- Banking as a Service
+- Neobank
+- Payments
+- Treasury
+- Cards
+- Startups
+- Y Combinator
 apis: []
+common:
+- type: DomainSecurity
+  url: security/florin-domain-security.yml
+- type: Website
+  url: https://florin.inc
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
